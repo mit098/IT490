@@ -1,0 +1,26 @@
+//Start Rabbitmq
+mkdir mit
+touch rabbitstsrt.sh
+touch rabbitstop.sh
+
+//write command in the rabbitstart.sh file
+#!/init.d/sh
+sudo systemctl start rabbitmq-server.service
+echo "rabbitmq is on"
+
+//write command in the rabbitstop.sh file
+#!/init.d/sh
+sudo systemctl stop rabbitmq-server.service
+echo "rabbitmq is stop"
+
+//Write command to start rabbitmq server
+bash rabbitstatr.sh
+//Rabbitmq is on
+
+//Write command to check Status 
+besh service rabbitmq-server status
+//Active (running)
+
+//write command to stop Rabbitmq
+bash rabbitstop.sh
+//Rabbitmq is stop
